@@ -1,0 +1,20 @@
+{% for event in events  %}
+    <table border="1">
+        <thead>
+        <tr>
+            <th>title</th>
+            <th>dateE</th>
+            <th>nbParticpants</th>
+            <th>state</th>
+        </tr>
+        <tr>
+            {% if event.state  %}
+            <td>{{ event.title }}</td>
+{#            <td>{{ event.dateE }}</td>#}
+            <td>{{ event.nbParticipants}}</td>
+             <td>{{ event.state }}</td>
+            {% endif %}
+        </tr>
+        </thead>
+    </table>
+{% endfor %}

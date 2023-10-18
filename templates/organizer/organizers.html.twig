@@ -1,0 +1,18 @@
+{% for organizer in organizers  %}
+
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Adress</th>
+        </tr>
+        </thead>
+        <tr>
+            <td>{{ organizer.id }}</td>
+            <td>{{ organizer.name }}</td>
+            <td>{{ organizer.adress }}</td>
+        </tr>
+    </table>
+
+{% endfor %}
